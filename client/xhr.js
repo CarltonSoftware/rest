@@ -124,7 +124,7 @@ module.exports = client(function xhr(request) {
 						text: client.statusText
 					};
 					response.headers = parseHeaders(client.getAllResponseHeaders());
-					response.entity = client.responseText;
+					response.entity = client.response;
 
 					// #125 -- Sometimes IE8-9 uses 1223 instead of 204
 					// http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
